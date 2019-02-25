@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/fav_padding"
+    android:paddingBottom="@dimen/fav_padding"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fav_margin"
+        android:layout_marginRight="@dimen/fav_margin"
+        android:layout_marginBottom="@dimen/fav_margin"
+        android:textAppearance="@style/titlesText_style"
+        android:text="@string/socialNetworks"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="@dimen/fav_padding"
+            android:paddingStart="24dp"
+            android:paddingEnd="@dimen/fav_padding"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/size_image_editSocialNetworks"
+                    android:layout_height="@dimen/size_image_editSocialNetworks"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/twitter"
+                    android:src="@drawable/ic_twitter_logo" />
+                <EditText
+                    android:id="@+id/twitterInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fav_margin"
+                    android:layout_marginStart="@dimen/fav_margin"
+                    android:inputType="text"
+                    android:textAppearance="@style/fav_input_text"
+                    android:hint="@string/twitter"
+                    android:background="@drawable/edittext_shape"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/size_image_editSocialNetworks"
+                    android:layout_height="@dimen/size_image_editSocialNetworks"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/instagram"
+                    android:src="@drawable/ic_instagram_logo" />
+                <EditText
+                    android:id="@+id/instagramInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fav_margin"
+                    android:layout_marginStart="@dimen/fav_margin"
+                    android:inputType="text"
+                    android:textAppearance="@style/fav_input_text"
+                    android:hint="@string/instagram"
+                    android:background="@drawable/edittext_shape"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/size_image_editSocialNetworks"
+                    android:layout_height="@dimen/size_image_editSocialNetworks"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/snapchat"
+                    android:src="@drawable/ic_snapchat_logo" />
+                <EditText
+                    android:id="@+id/snapchatInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fav_margin"
+                    android:layout_marginStart="@dimen/fav_margin"
+                    android:inputType="text"
+                    android:textAppearance="@style/fav_input_text"
+                    android:hint="@string/snapchat"
+                    android:background="@drawable/edittext_shape"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/size_image_editSocialNetworks"
+                    android:layout_height="@dimen/size_image_editSocialNetworks"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/facebook"
+                    android:src="@drawable/ic_facebook_logo" />
+                <EditText
+                    android:id="@+id/facebookInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fav_margin"
+                    android:layout_marginStart="@dimen/fav_margin"
+                    android:inputType="text"
+                    android:textAppearance="@style/fav_input_text"
+                    android:hint="@string/facebook"
+                    android:background="@drawable/edittext_shape"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/size_image_editSocialNetworks"
+                    android:layout_height="@dimen/size_image_editSocialNetworks"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/youtube"
+                    android:src="@drawable/ic_youtube_logo" />
+                <EditText
+                    android:id="@+id/youtubeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fav_margin"
+                    android:layout_marginStart="@dimen/fav_margin"
+                    android:inputType="text"
+                    android:textAppearance="@style/fav_input_text"
+                    android:hint="@string/youtube"
+                    android:background="@drawable/edittext_shape"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fav_margin"
+        android:layout_marginRight="@dimen/fav_margin"
+        android:layout_marginTop="@dimen/fav_margin">
+
+        <Button
+            android:id="@+id/cancelName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_dialog_button"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/confirmName"
+            android:layout_toStartOf="@+id/confirmName"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal|bottom"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            android:textAppearance="@style/dialog_button" />
+
+        <Button
+            android:id="@+id/confirmName"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/height_dialog_button"
+            android:layout_marginLeft="@dimen/fav_margin"
+            android:layout_marginStart="@dimen/fav_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal|bottom"
+            android:onClick="confirmSocialNetworks"
+            android:text="@string/confirm"
+            android:textAppearance="@style/dialog_button" />
+    </RelativeLayout>
+
+</LinearLayout>

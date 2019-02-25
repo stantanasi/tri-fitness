@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape">
+
+    <LinearLayout
+        android:id="@+id/pickImage_fromCamera_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fav_padding"
+            android:textAppearance="@style/text_style"
+            android:text="Prendre en photo"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mini_space"/>
+
+    <LinearLayout
+        android:id="@+id/pickImage_fromGallery_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fav_padding"
+            android:textAppearance="@style/text_style"
+            android:text="Depuis la gallerie"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mini_space"/>
+
+    <LinearLayout
+        android:id="@+id/delete_image_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fav_padding"
+            android:textAppearance="@style/text_style"
+            android:text="Supprimer la photo"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

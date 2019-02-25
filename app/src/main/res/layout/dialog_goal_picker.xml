@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fav_padding"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fav_margin"
+        android:textAppearance="@style/titlesText_style"
+        android:text="@string/goal"/>
+
+    <RadioGroup
+        android:id="@+id/goal_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
+
+        <RadioButton
+            android:id="@+id/goal_muscleGain_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goalChecked"
+            android:text="@string/goal_muscleGain" />
+
+        <RadioButton
+            android:id="@+id/goal_improveCardio_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goalChecked"
+            android:text="@string/goal_improveCardio" />
+
+        <RadioButton
+            android:id="@+id/goal_fit_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goalChecked"
+            android:text="@string/goal_fit" />
+
+        <RadioButton
+            android:id="@+id/goal_all_RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goalChecked"
+            android:text="@string/goal_all" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fav_margin" >
+        <Button
+            android:id="@+id/cancelName"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal|bottom"
+            android:onClick="cancel"
+            android:background="@android:color/transparent"
+            android:textAppearance="@style/dialog_button"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+</LinearLayout>

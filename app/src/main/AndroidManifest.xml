@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tri.fitness">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- Member Aera -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"/>
+
+        <!-- MainActivty -->
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/app_name"/>
+
+        <!-- Profil -->
+        <activity
+            android:name=".activities.ProfilActivity"
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity
+            android:name=".activities.EditAboutActivity"
+            android:parentActivityName=".activities.ProfilActivity" />
+        <activity
+            android:name=".activities.BodyActivity"
+            android:parentActivityName=".activities.ProfilActivity" />
+        <activity
+            android:name=".activities.BodyGraphActivity"
+            android:parentActivityName=".activities.BodyActivity" />
+        <activity
+            android:name=".activities.StatisticsActivity"
+            android:parentActivityName=".activities.ProfilActivity" />
+
+        <!-- Calendar -->
+        <activity
+            android:name=".activities.CalendarActivity"
+            android:parentActivityName=".activities.HomeActivity" />
+
+        <!-- Training -->
+        <activity
+            android:name=".activities.TrainingActivity"
+            android:parentActivityName=".activities.HomeActivity" />
+        <!-- Programs -->
+        <activity
+            android:name=".activities.ProgramsRowActivity"
+            android:parentActivityName=".activities.TrainingActivity" />
+        <activity
+            android:name=".activities.ProgramsActivity"
+            android:parentActivityName=".activities.ProgramsRowActivity"/>
+        <!-- Sessions -->
+        <activity
+            android:name=".activities.SessionsRowActivity"
+            android:parentActivityName=".activities.TrainingActivity" />
+        <activity
+            android:name=".activities.SessionActivity"
+            android:parentActivityName=".activities.SessionsRowActivity"/>
+        <activity android:name=".activities.ExerciceUsedActivity"
+            android:parentActivityName=".activities.SessionActivity"/>
+        <!-- Exercising -->
+        <activity
+            android:name=".activities.ExercisingRowActivity"
+            android:parentActivityName=".activities.TrainingActivity" />
+        <activity
+            android:name=".activities.EditExercisingActivity"
+            android:parentActivityName=".activities.ExercisingRowActivity" />
+        <activity
+            android:name=".activities.ExercisingActivity"
+            android:parentActivityName=".activities.ExercisingRowActivity"/>
+
+        <!-- Settings -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:parentActivityName=".activities.HomeActivity"/>
+
+        <!-- About -->
+        <activity android:name=".activities.AboutActivity"
+            android:parentActivityName=".activities.HomeActivity"/>
+
+
+
+
+        <activity
+            android:name=".activities.SearchActivity"/>
+    </application>
+
+</manifest>

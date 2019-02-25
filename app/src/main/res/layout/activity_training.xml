@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TrainingActivity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:id="@+id/programs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/fav_padding"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/ripple_effect_background_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/programs"
+            android:textAppearance="@style/training_titles" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/programs_explanation"
+            android:textAppearance="@style/text_style" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mini_space" />
+
+    <LinearLayout
+        android:id="@+id/sessions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/fav_padding"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/ripple_effect_background_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/training_titles"
+            android:text="@string/sessions" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/text_style"
+            android:text="@string/sessions_explanation" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mini_space" />
+
+    <LinearLayout
+        android:id="@+id/exercising"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/fav_padding"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/ripple_effect_background_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/training_titles"
+            android:text="@string/exercising" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/text_style"
+            android:text="@string/exercising_explanation" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#b9b9b9</color>
+    <color name="colorAccent">#2287df</color>
+
+    <!--
+    <color name="colorPrimary">#2287df</color>
+    <color name="colorPrimaryDark">#1e75c1</color>
+    <color name="colorAccent">#ff7614</color>
+    -->
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+
+    <color name="background_layout">#ffffff</color>
+    <color name="text_color">#000000</color>
+    <color name="subtitlesText_color">#939393</color>
+
+    <color name="toolbar_textPrimary_color">#000000</color>
+    <color name="toolbar_textSecondary_color">#939393</color>
+
+    <color name="space">#c1c1c1</color>
+    <color name="mini_space">#939393</color>
+
+    <color name="button_profil_header">#cccccc</color>
+
+    <!-- Body -->
+    <color name="colorDefault_bmi">#bababa</color>
+    <color name="colorDefault_date">#ff0000</color>
+    <!-- BMI -->
+    <color name="colorMalnutrition">#67b3ff</color>
+    <color name="colorThinness">#4696ba</color>
+    <color name="colorNormal">#20cc20</color>
+    <color name="colorOverweight">#e98d2b</color>
+    <color name="colorObesity_moderate">#c26f30</color>
+    <color name="colorObesity_severe">#d10505</color>
+    <color name="colorObesity_mass">#3e0000</color>
+</resources>

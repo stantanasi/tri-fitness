@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AboutActivity">
+
+    <include layout="@layout/app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/space">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fav_spacing"
+            android:background="@color/background_layout"
+            android:elevation="@dimen/fav_elevation">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="100"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Application"/>
+            </TableRow>
+
+            <TableRow>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_tri_fitness_logo"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="@string/app_name"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="by @StanTanasi"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Version"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="@string/version"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Depuis le 19 mai 2018, 15:43"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Nouveautés"/>
+                </LinearLayout>
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacing"
+                android:background="@color/space"/>
+
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="100"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Compagnie"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Tri+"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="Paris, France"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Visiter mon site"/>
+                </LinearLayout>
+            </TableRow>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacing"
+                android:background="@color/space"/>
+
+
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="100"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Auteur"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Lory-Stan Tanasi"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="Levallois-Perret, France"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="M'envoyer un email"/>
+                </LinearLayout>
+            </TableRow>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacing"
+                android:background="@color/space"/>
+
+
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_span="100"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Soutiens"/>
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Notez"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="Donnez-nous votre avis"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Donner"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="Soutenez mon projet en me récompensant"/>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_spacingText"/>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="@dimen/about_sizeIcon"
+                    android:layout_height="@dimen/about_sizeIcon"
+                    android:layout_gravity="center"
+                    android:layout_column="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_titles_style"
+                        android:text="Signaler des bugs"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/about_subtitles_style"
+                        android:text="Si vous rencontrez des bugs"/>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

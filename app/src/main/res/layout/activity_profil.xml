@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ProfilActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_layout" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="205dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic_CircleImageView"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+                    android:contentDescription="ProfilPic"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:civ_border_color="#8e8e8e"
+                    app:civ_border_width="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:text="level"/>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/name_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/name"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/pseudo_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/subtitlesText_style"
+                android:text="@string/pseudo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/gender_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="gender" />
+                <TextView
+                    android:id="@+id/age_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text=", age" />
+
+                <TextView
+                    android:id="@+id/size_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text=" -- size" />
+                <TextView
+                    android:id="@+id/weight_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text=" / weight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text=" -- country" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goal_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="@style/goal"
+                    android:text="@string/goal"/>
+
+                <TextView
+                    android:id="@+id/AboutMe_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/AboutMe"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:background="@color/button_profil_header" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Activité"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="bodyActivity"
+                    android:text="@string/body"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="statisticsActivity"
+                    android:text="Stats"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+
+            <LinearLayout
+                android:id="@+id/goal_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/goal" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:id="@+id/editGoal_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/goal"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/AboutMe_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/AboutMe" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:id="@+id/editAbout_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/AboutMe"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/sportingLevel_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/sportingLevel" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:id="@+id/sportingLevel_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/sportingLevel"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Sports pratiques" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="des sports"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="Club ou l'utilisateur s'entraine" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="le club avec image"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ce qui est en dessous ne pourra etre modifier que depuis l'application mère Tri+"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/name_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/name" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:id="@+id/editName_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/name"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/gender_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/gender" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <TextView
+                    android:id="@+id/editGender_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_style"
+                    android:text="@string/gender"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/birthday_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/birthday" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/bornThe"/>
+                    <TextView
+                        android:id="@+id/editBirthday_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/birthday"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/socialNetworks_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/socialNetworks" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/size_image_socialNetworks"
+                        android:layout_height="@dimen/size_image_socialNetworks"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/twitter"
+                        android:src="@drawable/ic_twitter_logo" />
+                    <TextView
+                        android:id="@+id/editTtwitter_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:layout_marginStart="@dimen/fav_margin"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/twitter"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/size_image_socialNetworks"
+                        android:layout_height="@dimen/size_image_socialNetworks"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/instagram"
+                        android:src="@drawable/ic_instagram_logo" />
+                    <TextView
+                        android:id="@+id/editInstagram_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:layout_marginStart="@dimen/fav_margin"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/instagram"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/size_image_socialNetworks"
+                        android:layout_height="@dimen/size_image_socialNetworks"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/snapchat"
+                        android:src="@drawable/ic_snapchat_logo" />
+                    <TextView
+                        android:id="@+id/editSnapchat_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:layout_marginStart="@dimen/fav_margin"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/snapchat"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/size_image_socialNetworks"
+                        android:layout_height="@dimen/size_image_socialNetworks"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/facebook"
+                        android:src="@drawable/ic_facebook_logo" />
+                    <TextView
+                        android:id="@+id/editFacebook_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:layout_marginStart="@dimen/fav_margin"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/facebook"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fav_spacingText" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/size_image_socialNetworks"
+                        android:layout_height="@dimen/size_image_socialNetworks"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/youtube"
+                        android:src="@drawable/ic_youtube_logo" />
+                    <TextView
+                        android:id="@+id/editYoutube_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:layout_marginStart="@dimen/fav_margin"
+                        android:textAppearance="@style/text_style"
+                        android:text="@string/youtube"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

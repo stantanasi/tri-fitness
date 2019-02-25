@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Tri+ Fitness</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="pseudo">Pseudo</string>
+    <string name="password">Mot de passe</string>
+    <string name="remember_me">Mémoriser mes informations</string>
+    <string name="login">Se connecter</string>
+    <string name="forget_password">Mot de passe oublié ?</string>
+    <string name="sign_up">Créer un compte</string>
+
+
+    <!-- HomeActivity -->
+    <string name="profil">Profil</string>
+    <string name="calendar">Journal</string>
+    <string name="training">Entraînements</string>
+    <string name="annex">Annexes</string>
+    <string name="settings">Paramètres</string>
+    <string name="start">Commencer</string>
+
+
+    <!-- Profil -->
+    <string name="name">Prénom / Nom</string>
+    <string name="years_old">\ ans</string>
+    <string name="goal">Objectif</string>
+    <string name="AboutMe">À propos de moi</string>
+    <string name="sportingLevel">Niveau sportif</string>
+    <string name="gender">Genre</string>
+    <string name="birthday">Date de naissance</string>
+    <string name="socialNetworks">Réseaux Sociaux</string>
+    <!-- EditProfil -->
+    <string-array name="goal">
+        <item>Prendre du muscle</item>
+        <item>Améliorer sa puissance</item>
+        <item>Entretien de la forme</item>
+        <item>Tous objectifs</item>
+    </string-array>
+    <string-array name="sportingLevel">
+        <item>Débutant</item>
+        <item>Intermédiaire</item>
+        <item>Avancé</item>
+        <item>Expert</item>
+        <item>Tous niveaux</item>
+    </string-array>
+    <string name="goal_muscleGain">Prendre du muscle</string>
+    <string name="goal_improveCardio">Améliorer sa puissance</string>
+    <string name="goal_fit">Entretien de la forme</string>
+    <string name="goal_all">Tous objectifs</string>
+    <string name="aboutExplanation">Partagez votre bio avec des milliers d\'athlètes et devenez source de motivation !</string>
+    <string name="level_beginner">Débutant</string>
+    <string name="level_intermediate">Intermédiaire</string>
+    <string name="level_advanced">Avancé</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_all">Tous niveaux</string>
+    <string name="firstName">Prénom</string>
+    <string name="lastName">Nom</string>
+    <string name="gender_man">Homme</string>
+    <string name="gender_woman">Femme</string>
+    <string name="bornThe">Né le\ </string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="snapchat">Snapchat</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">Youtube</string>
+
+    <string name="confirm">OK</string>
+    <string name="next">Suivant</string>
+    <string name="cancel">Annuler</string>
+
+
+    <!-- Body -->
+    <string name="body">Corps</string>
+    <!-- BMI -->
+    <string name="BMI">IMC (Indice de masse corporelle)</string>
+    <string name="malnutrition">Dénutrition ou famine</string>
+    <string name="thinness">Maigreur</string>
+    <string name="normal">Corpulence normale</string>
+    <string name="overweight">Surpoids</string>
+    <string name="obesity_moderate">Obésité modérée</string>
+    <string name="obesity_severe">Obésité sévère</string>
+    <string name="obesity_mass">Obésité morbide ou massive</string>
+    <!-- Measurement -->
+    <string name="size">Taille</string>
+    <string name="weight">Poids</string>
+    <string name="bodyCircumference">Tour de …</string>
+    <string name="neck">Cou</string>
+    <string name="chest">Torse</string>
+    <string name="waist">Tour de taille</string>
+    <string name="hip">Hanche</string>
+    <string name="arm">Bras</string>
+    <string name="leftArm">Bras gauche</string>
+    <string name="rightArm">Bras droit</string>
+    <string name="forearm">Avant-bras</string>
+    <string name="leftForearm">Avant-bras gauche</string>
+    <string name="rightForearm">Avant-bras droit</string>
+    <string name="thigh">Cuisses</string>
+    <string name="leftThigh">Cuisses gauche</string>
+    <string name="rightThigh">Cuisses droite</string>
+    <string name="calf">Mollets</string>
+    <string name="leftCalf">Mollets gauche</string>
+    <string name="rightCalf">Mollets droit</string>
+
+    <string name="date">Date</string>
+    <string name="default_date">À mettre à jour</string>
+    <string name="body_value">##.#</string>
+    <string name="unitSize">\ cm</string>
+    <string name="unitWeight">\ kg</string>
+    <string name="unitDistance">\ km</string>
+    <string name="left">Gauche</string>
+    <string name="right">Droite</string>
+    <string name="comma_circumference">\ ,\ </string>
+    <string name="from_the_beggining">\ depuis le début</string>
+
+
+    <!-- Statistics -->
+    <string name="statistic">Statistique</string>
+
+
+    <!-- Training -->
+    <string name="level">Niveau</string>
+    <!-- Programs -->
+    <string name="programs">Programmes</string>
+    <string name="program">Programme</string>
+    <string name="programs_explanation">regroupement plusieurs séances sur plusieurs journées</string>
+    <!-- Sessions -->
+    <string name="sessions">Séances</string>
+    <string name="sessions_explanation">regroupement plusieurs exercices sur 1 journées</string>
+    <string name="session">Séance</string>
+    <string name="session_name">Nom de la séance</string>
+    <!-- Exercising -->
+    <string name="exercising">Exercices</string>
+    <string name="exercice">Exercice</string>
+    <string name="exercising_explanation">choisir d\'apres les equipements</string>
+    <!-- Equipment -->
+    <string name="equipment">Équipements</string>
+    <string name="equipment_explanation">explication</string>
+    <string name="any_equipment">Aucun équipement\najouter pour l\'instant</string>
+    <string name="editEquipment">Éditer l\'équipement</string>
+    <string name="equipment_name">Nom de l\'équipement</string>
+    <string name="use_instruction">Instruction d\'utilisation</string>
+    <string name="subject_muscles">Muscles sollicités</string>
+    <string name="delete_equipment">Supprimer l\'équipement</string>
+
+
+    <!-- Settings -->
+    <string name="account">Compte</string>
+    <string name="notification">Notifications</string>
+    <string name="creator">Crée par Lory-Stan Tanasi</string>
+    <string name="version">1.0.0</string>
+
+    <string name="email">Adresse email</string>
+    <string name="retape_password">Retaper le mot de passe</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">À propos</string>
+</resources>

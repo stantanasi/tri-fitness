@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BodyActivity">
+
+    <include layout="@layout/app_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bmiInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/BMI" />
+
+                <TextView
+                    android:id="@+id/dateBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <TextView
+                    android:id="@+id/bmi"
+                    android:layout_width="@dimen/bmi_size"
+                    android:layout_height="@dimen/bmi_size"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/ic_border_bmi"
+                    android:textAppearance="@string/body_value"
+                    android:textSize="30sp"
+                    android:text="@string/body_value"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/side_body"
+                    android:text=""/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/size_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/size" />
+
+                <TextView
+                    android:id="@+id/dateSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitSize_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitSize"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <LinearLayout
+                android:id="@+id/weight_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/weight" />
+
+                <TextView
+                    android:id="@+id/dateWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitWeight"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Neck -->
+            <LinearLayout
+                android:id="@+id/neck_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/neck" />
+
+                <TextView
+                    android:id="@+id/dateNeck_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/neckValue_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitNeck_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitSize"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Chest -->
+            <LinearLayout
+                android:id="@+id/chest_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/chest" />
+
+                <TextView
+                    android:id="@+id/dateChest_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/chestValue_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitChest_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitSize"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Waist -->
+            <LinearLayout
+                android:id="@+id/waist_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/waist" />
+
+                <TextView
+                    android:id="@+id/dateWaist_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/waistValue_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitWaist_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitSize"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Hip -->
+            <LinearLayout
+                android:id="@+id/hip_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/hip" />
+
+                <TextView
+                    android:id="@+id/dateHip_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/hipValue_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/body_value"
+                            android:text="@string/body_value"/>
+
+                        <TextView
+                            android:id="@+id/unitHip_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/default_text"
+                            android:text="@string/unitSize"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/side_body"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Arm -->
+            <LinearLayout
+                android:id="@+id/arm_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/arm" />
+
+                <TextView
+                    android:id="@+id/dateArm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/left_arm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/left_unitArm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/left_arm_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/right_arm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/right_unitArm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/right_arm_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Forearm -->
+            <LinearLayout
+                android:id="@+id/forearm_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/forearm" />
+
+                <TextView
+                    android:id="@+id/dateForearm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/left_forearm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/left_unitForearm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/left_forearm_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/right_forearm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/right_unitForearm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/right_forearm_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Thigh -->
+            <LinearLayout
+                android:id="@+id/thigh_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/thigh" />
+
+                <TextView
+                    android:id="@+id/dateThigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/left_thigh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/left_unitThigh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/left_thigh_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/right_thigh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/right_unitThigh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/right_thigh_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+            <!-- Calf -->
+            <LinearLayout
+                android:id="@+id/calf_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fav_padding"
+                android:elevation="@dimen/fav_elevation"
+                android:translationZ="@dimen/fav_elevation"
+                android:orientation="vertical"
+                android:background="@drawable/ripple_effect_background_layout" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/titlesText_style"
+                    android:text="@string/calf" />
+
+                <TextView
+                    android:id="@+id/dateCalf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/body_margin_date"
+                    android:textAppearance="@style/subtitlesText_style"
+                    android:text="@string/date" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/left_calf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/left_unitCalf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/left_calf_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/left"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fav_margin"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/right_calf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/body_value"
+                                android:text="@string/body_value"/>
+
+                            <TextView
+                                android:id="@+id/right_unitCalf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/default_text"
+                                android:text="@string/unitSize"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/right_calf_side"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/side_body"
+                            android:text="@string/right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_space"
+                android:background="@color/space" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
